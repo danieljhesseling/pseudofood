@@ -1,0 +1,251 @@
+/* Colors */
+/*
+Main blue: #336B87 
+Soft blue: #90AFC5
+Dark: #2A3132
+Brown: #763226
+*/
+/* Basics */
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: auto;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    max-height: fit-content;
+  }
+
+section{ height: 100vh; }
+
+
+/* Others */
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 200px;
+    color:white;
+    transition: background-color 0.4s;
+}
+
+.btn:hover{
+    background-color: #763226;
+    color:white;
+}
+
+.btn-full{background-color: #336B87;}
+
+.btn-ghost {border: 1px solid #2A3132;}
+
+/* Header */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://i.ibb.co/Y0bxssN/hamburger.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+}
+
+.header-div{
+    position:absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom:0 ;
+    color:white;
+    font-size: 340%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+.header-div h2{
+    margin-bottom: 20px;
+    color:beige;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-size: 220%;
+}
+
+.logo{
+    height:80px;
+    margin-top: 10px;
+    width: auto;
+    float:right;
+}
+
+.head-nav{
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+    margin-right: 15%;
+}
+
+.head-nav li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.head-nav li a{
+    color:beige;
+    padding: 2px 0;
+    text-decoration: none;
+    font-size: 120%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+
+}
+
+.head-nav li a:hover{border-bottom: 2px solid #763226;}
+
+/*Features Section Cards */
+.features-title {
+    text-align: center;
+    margin-bottom: 2%;
+    color: black;
+}
+
+.features-title::after{
+    display: block;
+    height: 2px;
+    background-color: #763226;
+    content: " ";
+    width: 30vw;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.card-body{
+    border: 1px solid black;
+    color:black;
+    border-radius: 10px;
+    height: 72vh;
+}
+
+.card-title{
+    text-align: center;
+    color:#763226;
+    padding-bottom: 2%;
+    border-bottom: black 1px solid;
+}
+
+.card-text {
+    padding-left:5%;
+    color:#2A3132;
+    padding-right: 5%;
+}
+.card-body svg{
+    display: block;
+    color:#336B87;
+    padding-top: 2%;
+    padding-right: -1%;
+    font-size: 100%;
+    margin: 10px;
+}
+
+/* Carousel */
+.carousel-section{
+    padding-bottom: 10px;
+    background-color: beige;
+}
+
+.item{
+     max-height:80vh;
+     max-width: 80vw;
+     overflow: hidden;
+     padding-left: 21%;
+     padding-right: 10%;
+}
+
+/* Countries */
+.countries-section img{
+    padding-top: 6%;
+    padding-bottom: 2%;
+    width: 25vw;
+    height: 40vh;
+}
+
+
+.grow { transition: all .2s ease-in-out; }
+    
+.grow:hover { transform: scale(1.1); }
+
+/* Contact section */
+.contact-section {
+    background-color: beige;
+}
+
+/* Registration */ 
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* Form and gradient */
+#contact-title{
+    padding-top: 10px;
+    color:honeydew;
+}
+
+.contact-section{
+    color:gainsboro;
+    padding-bottom:0;
+}
+
+  .bg-gra-02 {
+    background: -webkit-gradient(linear, left bottom, right top, from(#336B87), to(#763226));
+    background: -webkit-linear-gradient(bottom left, #336B87 0%, #763226 100%);
+    background: -moz-linear-gradient(bottom left, #336B87 0%, #763226 100%);
+    background: -o-linear-gradient(bottom left, #336B87 0%, #763226 100%);
+    background: linear-gradient(to top right, #336B87 0%, #763226 100%);
+  }
+
+  /* Footer */
+  footer{
+      padding-top: 5vh;
+      text-align: center;
+      color:white;
+      color: rgba(36, 35, 35, 0);
+  }
+
